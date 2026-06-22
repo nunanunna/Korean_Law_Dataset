@@ -1,0 +1,232 @@
+=== CURRENT STATE OF DATASET ===
+
+Bill: 조세특례제한법 일부개정법률안 (2219332) [ID: PRC_B2J6H0I6G1H8F1G0C0A4A2Z8A5Y1Y4]
+  - Present in 경제.json with categories field: ['경제', '노동']
+  - Present in 노동.json with categories field: ['경제', '노동']
+
+Bill: 청년고용촉진 특별법 일부개정법률안 (2219306) [ID: PRC_P2O6O0N4V3V0T1U1S0T2R2S8O2M9M9]
+  - Present in 경제.json with categories field: ['노동', '경제']
+  - Present in 노동.json with categories field: ['노동', '경제']
+
+Bill: 하도급거래 공정화에 관한 법률 일부개정법률안 (2219365) [ID: PRC_Q2O6P0X4X1W0U1V3T5U0P3Q3P2N6N9]
+  - Present in 경제.json with categories field: ['경제']
+
+Bill: 건설산업기본법 일부개정법률안 (2219337) [ID: PRC_L2J6S0R6W0W9V0B9A0Z3Y5T1R6Q8C3]
+  - Present in 경제.json with categories field: ['주거', '경제']
+  - Present in 주거.json with categories field: ['주거', '경제']
+
+Bill: 농지법 일부개정법률안 (2219302) [ID: PRC_S2T6R0Z6A1Y5Z1X0Y0W5W3F8D7D8C1]
+  - Present in 경제.json with categories field: ['주거', '경제', '정치·행정']
+  - Present in 정치_행정.json with categories field: ['주거', '경제', '정치·행정']
+
+Bill: 대리점거래의 공정화에 관한 법률 일부개정법률안 (2219383) [ID: PRC_N2W6W0U6V1T2U1S7O1P7N2N6M5N6L0]
+  - Present in 경제.json with categories field: ['경제', '정치·행정']
+
+Bill: 대규모유통업에서의 거래 공정화에 관한 법률 일부개정법률안 (2219382) [ID: PRC_B2A6Y0H6I1G2F1D7E1M6L3K6I0J2R5]
+  - Present in 경제.json with categories field: ['경제', '정치·행정']
+
+Bill: 중소기업진흥에 관한 법률 일부개정법률안 (2219377) [ID: PRC_J2Q6O0N6J1I5H1G3O1N9M2L6T4S2R4]
+  - Present in 경제.json with categories field: ['경제']
+
+Bill: 가맹사업거래의 공정화에 관한 법률 일부개정법률안 (2219375) [ID: PRC_Z2X6W0X6E1F2D1E7C1D5B4C3Y3W0W8]
+  - Present in 경제.json with categories field: ['경제', '정치·행정']
+
+Bill: 공익신고자 보호법 일부개정법률안 (2219368) [ID: PRC_H2E6N0L6N1T5S1R6Q4Z0W1V9K5J0U6]
+  - Present in 경제.json with categories field: ['경제', '생활안전']
+  - Present in 생활안전.json with categories field: ['경제', '생활안전']
+
+Bill: 평생교육법 일부개정법률안 (2219385) [ID: PRC_O2P6N0M6M1K8L1H0H1G4E5F0D5E7M4]
+  - Present in 교육.json with categories field: ['교육']
+
+Bill: 농어업인 삶의 질 향상 및 농어촌지역 개발촉진에 관한 특별법 일부개정법률안 (2219381) [ID: PRC_P2P6O0M6M1L8M1T0U1S3R4R2P9Q0M6]
+  - Present in 교육.json with categories field: ['교육']
+
+Bill: 일제하 일본군위안부 피해자에 대한 보호ㆍ지원 및 기념사업 등에 관한 법률 일부개정법률안 (2219360) [ID: PRC_D2D6B0C6B1W6X1V7W2U6V3T7B4B7A2]
+  - Present in 교육.json with categories field: ['정치·행정', '교육']
+
+Bill: 학교폭력예방 및 대책에 관한 법률 일부개정법률안 (2219338) [ID: PRC_G2F6N0L3K3I1J1S6Q4P4O1J1K0Q1Z6]
+  - Present in 교육.json with categories field: ['교육']
+
+Bill: 사립대학의 구조개선 지원에 관한 법률 일부개정법률안 (2219327) [ID: PRC_X2W6T0C6B0Z9G1F6B3A6J4I5F9N2N0]
+  - Present in 교육.json with categories field: ['교육']
+
+Bill: 동물보호법 일부개정법률안 (2219313) [ID: PRC_Y2X6D0C6B0K9H1C7K1J4G2C7C6B4A8]
+  - Present in 교육.json with categories field: ['교육', '정치·행정']
+
+Bill: 박물관 및 미술관 진흥법 일부개정법률안 (2219291) [ID: PRC_P2Y6X0V6V0R8P1M5V3T9S2R9A7Z7X4]
+  - Present in 교육.json with categories field: ['교육', '경제']
+
+Bill: 군인사법 일부개정법률안 (2219380) [ID: PRC_D2B6B0A6B1I5J1R8R3Q8O0P0N8O5J9]
+  - Present in 노동.json with categories field: ['노동', '보건', '정치·행정']
+  - Present in 보건.json with categories field: ['노동', '보건', '정치·행정']
+  - Present in 정치_행정.json with categories field: ['노동', '보건', '정치·행정']
+
+Bill: 청년고용촉진 특별법 일부개정법률안 (2219351) [ID: PRC_X2X6T0T4S2Q4R1P4Q3Y4Y5W2V8W3U5]
+  - Present in 노동.json with categories field: ['노동']
+
+Bill: 남녀고용평등과 일·가정 양립 지원에 관한 법률 일부개정법률안 (2219348) [ID: PRC_B2C6A0B6Z1Z1H1G0G2E4F1E5E0M3L7]
+  - Present in 노동.json with categories field: ['노동']
+
+Bill: 근로기준법 일부개정법률안 (2219346) [ID: PRC_P2Q6O0N6M1T1U1T0S2Q5M2L4M1T4S9]
+  - Present in 노동.json with categories field: ['노동']
+
+Bill: 근로자참여 및 협력증진에 관한 법률 일부개정법률안 (2219345) [ID: PRC_L2L6K0I6J1H1I1X0V2W6U4U9T8U7B1]
+  - Present in 노동.json with categories field: ['노동']
+
+Bill: 국가공무원법 일부개정법률안 (2219333) [ID: PRC_P2O6X0U5V2E9A0A9I5H5G1F7Z5Y2G0]
+  - Present in 노동.json with categories field: ['정치·행정', '노동']
+  - Present in 정치_행정.json with categories field: ['정치·행정', '노동']
+
+Bill: 근로기준법 일부개정법률안 (2219293) [ID: PRC_X2W6V0C6B0A4Z1V5S5R2A2J7I5H2G5]
+  - Present in 노동.json with categories field: ['노동']
+
+Bill: 고용보험법 일부개정법률안 (2219278) [ID: PRC_N2T6S0R5X2W7V0R9I5F7C4B5K2J4G4]
+  - Present in 노동.json with categories field: ['노동']
+
+Bill: 민법 일부개정법률안 (2219292) [ID: PRC_U2Q6Q0Y6X0W2V0C9C4K4J0I0O9N4M9]
+  - Present in 디지털.json with categories field: ['디지털', '환경·기후']
+  - Present in 환경_기후.json with categories field: ['디지털', '환경·기후']
+
+Bill: 정보통신망 이용촉진 및 정보보호 등에 관한 법률 일부개정법률안 (2219336) [ID: PRC_R2Q6Y0V6U1D8C1Y0H0W4F0C0B7K2H2]
+  - Present in 디지털.json with categories field: ['디지털']
+
+Bill: 위치정보의 보호 및 이용 등에 관한 법률 일부개정법률안 (2219307) [ID: PRC_W2C6B0A5Z1I9E0I9F3O7N0M7G4F2E2]
+  - Present in 디지털.json with categories field: ['디지털']
+
+Bill: 전자상거래 등에서의 소비자보호에 관한 법률 일부개정법률안 (2219294) [ID: PRC_A2Z6Y0E6D1C0G1M0L1K8J5G9F8B0K7]
+  - Present in 디지털.json with categories field: ['경제', '디지털']
+
+Bill: 기상법 일부개정법률안 (2219283) [ID: PRC_G2F6F0N6K0J8G1F3D5C8M1U4R8Q4M6]
+  - Present in 디지털.json with categories field: ['환경·기후', '디지털']
+  - Present in 환경_기후.json with categories field: ['환경·기후', '디지털']
+
+Bill: 환경기술 및 환경산업 지원법 일부개정법률안 (2219274) [ID: PRC_C2A6B0J6H1I5G1H5F0N6O0M0N6L4M6]
+  - Present in 디지털.json with categories field: ['환경·기후', '디지털']
+
+Bill: 정보통신망 이용촉진 및 정보보호 등에 관한 법률 일부개정법률안 (2219259) [ID: PRC_F2L6K0J5Q1P9O0W9W3S5R0Y8X6W2V2]
+  - Present in 디지털.json with categories field: ['디지털']
+
+Bill: 개인정보 보호법 일부개정법률안 (2219242) [ID: PRC_F2E6K0K5J1P9O0N9L3S5Q3Q6P8X9U9]
+  - Present in 디지털.json with categories field: ['디지털']
+
+Bill: 산업집적활성화 및 공장설립에 관한 법률 일부개정법률안 (2219241) [ID: PRC_R2A6Z0Y6W1M0L0K9J3R3Q4P4N7W0V6]
+  - Present in 디지털.json with categories field: ['경제', '디지털', '정치·행정']
+
+Bill: 국민건강보험법 일부개정법률안 (2219388) [ID: PRC_A2Z6I0J6I0O8N1M6L4T7S1R3L1N7V0]
+  - Present in 보건.json with categories field: ['정치·행정', '보건']
+
+Bill: 의료급여법 일부개정법률안 (2219386) [ID: PRC_F2L6K0J6S0P8O1W6V5R4Q5Z9V7U1D2]
+  - Present in 보건.json with categories field: ['정치·행정', '보건']
+
+Bill: 마약류 관리에 관한 법률 일부개정법률안 (2219367) [ID: PRC_L2O6L0U6T0S4M1L5K4J8T3S0B7A6Z6]
+  - Present in 보건.json with categories field: ['보건', '정치·행정', '생활안전']
+  - Present in 생활안전.json with categories field: ['보건', '정치·행정', '생활안전']
+
+Bill: 국민건강보험법 일부개정법률안 (2219326) [ID: PRC_O2N6M0T6R0Q4X0X8R5Q4P3X4W1V4C4]
+  - Present in 보건.json with categories field: ['보건', '경제', '정치·행정']
+
+Bill: 국민건강보험법 일부개정법률안 (2219323) [ID: PRC_L2J6K0R4Q2R0P1Q1O0O9W3X1V0U2U0]
+  - Present in 보건.json with categories field: ['보건']
+
+Bill: 농촌융복합산업 육성 및 지원에 관한 법률 일부개정법률안 (2219309) [ID: PRC_D2B5B1J1K0J4J1H7I4G0O5P5N2K4L8]
+  - Present in 보건.json with categories field: ['경제', '생활안전', '보건']
+  - Present in 생활안전.json with categories field: ['경제', '생활안전', '보건']
+
+Bill: 조세특례제한법 일부개정법률안 (2219305) [ID: PRC_V2D6E0C6D1B2A1A3I5J1H3G9G9E2F3]
+  - Present in 보건.json with categories field: ['보건']
+
+Bill: 긴급복지지원법 일부개정법률안 (2219372) [ID: PRC_K2H6G0P6O0L8H1V6U4U8O2N4M2K2T5]
+  - Present in 복지.json with categories field: ['정치·행정', '복지']
+  - Present in 정치_행정.json with categories field: ['정치·행정', '복지']
+
+Bill: 장애인연금법 일부개정법률안 (2219371) [ID: PRC_S2B6X0W6F0E8B1W6F5E8D1X3W1V4T2]
+  - Present in 복지.json with categories field: ['정치·행정', '복지']
+  - Present in 정치_행정.json with categories field: ['정치·행정', '복지']
+
+Bill: 장애인복지법 일부개정법률안 (2219369) [ID: PRC_M2J6R0Q6P0O8K1Q6X5W6U2R7Q4P2V2]
+  - Present in 복지.json with categories field: ['복지', '정치·행정']
+  - Present in 정치_행정.json with categories field: ['복지', '정치·행정']
+
+Bill: 장애인활동 지원에 관한 법률 일부개정법률안 (2219359) [ID: PRC_F2E6S0P6O0M8T1S6R5Q9W3V6U0T2A4]
+  - Present in 복지.json with categories field: ['정치·행정', '복지']
+  - Present in 정치_행정.json with categories field: ['정치·행정', '복지']
+
+Bill: 기초연금법 일부개정법률안 (2219356) [ID: PRC_B2B6Z0T6S0S4R1X5F5F1B1Y4X9G6F2]
+  - Present in 복지.json with categories field: ['복지']
+
+Bill: 발달장애인 권리보장 및 지원에 관한 법률 일부개정법률안 (2219354) [ID: PRC_U2R6A0Y6Y0W4F1E5D0B1I3H6G1C4B9]
+  - Present in 복지.json with categories field: ['복지']
+
+Bill: 농어촌정비법 일부개정법률안 (2219349) [ID: PRC_P2X6X0W6X1V5V1U0C3C0A3B2A9A8Y1]
+  - Present in 복지.json with categories field: ['환경·기후', '복지', '정치·행정']
+  - Present in 정치_행정.json with categories field: ['환경·기후', '복지', '정치·행정']
+  - Present in 환경_기후.json with categories field: ['환경·기후', '복지', '정치·행정']
+
+Bill: 농어촌정비법 일부개정법률안 (2219319) [ID: PRC_C2B6Y0G6F1E5Y1Y0W2H2E4N0M2J3G2]
+  - Present in 복지.json with categories field: ['복지', '주거', '정치·행정']
+  - Present in 정치_행정.json with categories field: ['복지', '주거', '정치·행정']
+  - Present in 주거.json with categories field: ['복지', '주거', '정치·행정']
+
+Bill: 농어촌구조개선 특별회계법 일부개정법률안 (2219317) [ID: PRC_P2N6O0N6N1V5T1U0S4T2R0S7A9Y3Z6]
+  - Present in 복지.json with categories field: ['복지']
+
+Bill: 지방세특례제한법 일부개정법률안 (2219263) [ID: PRC_C2A6A0Z6Z1I1G1G3E3F6E4E5M7M8L5]
+  - Present in 복지.json with categories field: ['복지', '주거']
+  - Present in 주거.json with categories field: ['복지', '주거']
+
+Bill: 국민여가활성화기본법 일부개정법률안 (2219256) [ID: PRC_V2V6U0S6Z1X0W0T9S3R1Q5W7V8U0C3]
+  - Present in 생활안전.json with categories field: ['생활안전']
+
+Bill: 전기안전관리법 일부개정법률안 (2219311) [ID: PRC_M2L6J0J6R0Q9N1J4I2G8G2O7N5M6S1]
+  - Present in 생활안전.json with categories field: ['생활안전', '환경·기후']
+  - Present in 환경_기후.json with categories field: ['생활안전', '환경·기후']
+
+Bill: 도로교통법 일부개정법률안 (2219373) [ID: PRC_Y2X6W0C6B0A8J1C6L5K0J3I3O1N2M9]
+  - Present in 생활안전.json with categories field: ['정치·행정', '생활안전']
+
+Bill: 항공안전법 일부개정법률안 (2219355) [ID: PRC_I2I6G0H4P0N8O1N7N4M5T2U7S2T8R5]
+  - Present in 생활안전.json with categories field: ['생활안전']
+
+Bill: 특정범죄신고자 등 보호법 일부개정법률안 (2219352) [ID: PRC_I2H6G0F6O0M4S1R5Z0Y0X4W6C8B3A3]
+  - Present in 생활안전.json with categories field: ['생활안전']
+
+Bill: 특허법 일부개정법률안 (2219341) [ID: PRC_A2X6W0F6E1D7C1Y3X5V3U2B3A8Y9H4]
+  - Present in 생활안전.json with categories field: ['생활안전', '경제', '정치·행정']
+
+Bill: 실용신안법 일부개정법률안 (2219339) [ID: PRC_A2Y6X0X6T1U7S1S3X5W7U2U3C2D6B7]
+  - Present in 생활안전.json with categories field: ['생활안전', '경제', '정치·행정']
+
+Bill: 집합건물의 소유 및 관리에 관한 법률 일부개정법률안 (2219364) [ID: PRC_W2D6C0B6A1P8M1L4U5S1R5Q3Z8D4C5]
+  - Present in 정치_행정.json with categories field: ['주거', '정치·행정']
+  - Present in 주거.json with categories field: ['주거', '정치·행정']
+
+Bill: 주택임대차보호법 일부개정법률안 (2219361) [ID: PRC_D2E6C0K6J1K8I1H4P5O2P1N7M5U6V8]
+  - Present in 주거.json with categories field: ['주거']
+
+Bill: 소득세법 일부개정법률안 (2219330) [ID: PRC_U2V6T0T6S1O6O1M4N0L5M0K2S6T7R3]
+  - Present in 주거.json with categories field: ['주거']
+
+Bill: 농지법 일부개정법률안 (2219318) [ID: PRC_O2O6M0N6V1W5U1T0T0R9S4O6O2N5L1]
+  - Present in 주거.json with categories field: ['주거']
+
+Bill: 수도법 일부개정법률안 (2219287) [ID: PRC_A2B6Z0A6I1I5H1F5G0E3F4A4B8A2Y5]
+  - Present in 주거.json with categories field: ['환경·기후', '주거', '정치·행정']
+  - Present in 환경_기후.json with categories field: ['환경·기후', '주거', '정치·행정']
+
+Bill: 주택도시기금법 일부개정법률안 (2219271) [ID: PRC_S2R6Q0R3Z3X0W0X8W5Q4W1V2D0B5A6]
+  - Present in 주거.json with categories field: ['주거']
+
+Bill: 기상법 일부개정법률안 (2219366) [ID: PRC_T2R6N0O4M2M4L1M5K3S2S2Q9R1Q7Q9]
+  - Present in 환경_기후.json with categories field: ['환경·기후']
+
+Bill: 생물다양성 보전 및 이용에 관한 법률 일부개정법률안 (2219362) [ID: PRC_X2W6U0U6Q1R1P1O4O2M5N3V2W6U4U0]
+  - Present in 환경_기후.json with categories field: ['환경·기후']
+
+Bill: 댐건설·관리 및 주변지역지원 등에 관한 법률 일부개정법률안 (2219353) [ID: PRC_L2K6J0H3P2Q6P1O7M4U1T0U8S9R8Z4]
+  - Present in 환경_기후.json with categories field: ['환경·기후']
+
+Bill: 자본시장과 금융투자업에 관한 법률 일부개정법률안 (2219340) [ID: PRC_A2H6F0N6J0I9F1C4B4J1T2S6P6L4L9]
+  - Present in 환경_기후.json with categories field: ['경제', '환경·기후']
+
+Bill: 환경오염시설의 통합관리에 관한 법률 일부개정법률안 (2219289) [ID: PRC_K2J6K0R6Q0P8X1U3T5B9B0Z2X7D0D8]
+  - Present in 환경_기후.json with categories field: ['환경·기후']

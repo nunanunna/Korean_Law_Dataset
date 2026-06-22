@@ -1,5 +1,6 @@
 """
-사용자가 수정한 카테고리 반영 및 부족한 법안 추가 수집 스크립트
+사용자가 수정한 카테고리(삭제 및 추가)를 정밀 분석하여 동기화하고,
+법안 개수가 10개 미만인 카테고리를 채우는 스크립트
 """
 
 import os
@@ -15,7 +16,7 @@ API_KEY = os.getenv("ASSEMBLY_API_KEY")
 BILL_API_URL = "https://open.assembly.go.kr/portal/openapi/nzmimeepazxkubdpn"
 SUMMARY_URL = "http://likms.assembly.go.kr/bill/bi/popup/billSummary.do"
 
-# 10개 카테고리와 키워드 매핑 (build_dataset.py와 동일)
+# 10개 카테고리와 키워드 매핑
 CATEGORIES = {
     "노동": {
         "keywords": [
@@ -137,10 +138,24 @@ TARGET_PER_CATEGORY = 10
 files = [f for f in os.listdir(dataset_dir) if f.endswith(".json")]
 mtimes = {filename: os.path.getmtime(os.path.join(dataset_dir, filename)) for filename in files}
 
-# 2. 모든 법안 및 인스턴스 수집
+# 2. full_dataset.json에서 이전 카테고리 정보 로드 (old_categories로 매핑)
+old_categories_map = {}
+full_dataset_path = os.path.join(dataset_dir, "full_dataset.json")
+if os.path.exists(full_dataset_path):
+    with open(full_dataset_path, "r", encoding="utf-8") as f:
+        try:
+            full_data = json.load(f)
+            for b in full_data.get("bills", []):
+                old_categories_map[b["bill_id"]] = b.get("categories", [])
+        except Exception as e:
+            print(f"Warning loading full_dataset.json: {e}")
+
+# 3. 개별 카테고리 파일에서 현재 존재하는 법안 인스턴스 수집
 # bill_id -> { filename: bill_dict }
 bill_instances = {}
 for filename in files:
+    if filename == "full_dataset.json":
+        continue
     filepath = os.path.join(dataset_dir, filename)
     with open(filepath, "r", encoding="utf-8") as f:
         try:
@@ -154,28 +169,53 @@ for filename in files:
         except Exception as e:
             print(f"Error reading {filename}: {e}")
 
-# 3. 각 법안에 대한 최종 카테고리 결정
-# 사용자가 직접 수정한 파일이 우선순위가 큼 (mtime이 큰 파일 기준)
+# 4. 각 법안에 대한 최종 카테고리 결정 알고리즘 적용
+# 규칙:
+# - actual_categories: 실제로 발견된 파일들의 카테고리명 목록
+# - declared_categories: 발견된 파일들 중 가장 mtime이 늦은 파일에 적혀 있는 categories 필드
+# - old_categories: full_dataset.json에 기록되어 있던 이전 카테고리 필드
+# - final_categories:
+#     1) declared_categories를 기반으로 하되,
+#     2) 만약 C가 old_categories에 있었는데 actual_categories에 없다면 (사용자가 C.json에서 지운 것), 최종 카테고리에서 C를 지웁니다.
+#     3) 만약 D가 declared_categories에 새로 추가되었고 actual_categories에는 아직 없다면, 사용자가 새로 지정한 것이므로 최종 카테고리에 유지합니다.
+
 final_bills = {}
 for bid, instances in bill_instances.items():
-    # mtime 기준 정렬하여 가장 최근에 수정된 파일 찾기
+    # mtime 기준 정렬하여 가장 최신 파일 찾기
     sorted_instances = sorted(instances.items(), key=lambda x: mtimes[x[0]], reverse=True)
     best_file, best_bill_data = sorted_instances[0]
     
-    # 최종 categories 값
-    final_categories = best_bill_data.get("categories", [])
+    # 1) declared_categories & actual_categories
+    declared_categories = best_bill_data.get("categories", [])
     
-    # 다른 모든 인스턴스의 categories 정보를 병합할 수도 있으나,
-    # 사용자가 직접 수정한 categories 리스트가 최종본이므로 그대로 사용합니다.
-    # 단, full_dataset.json 등에서만 발견되는 법안은 수정되지 않았으므로 기존 categories를 씁니다.
+    actual_categories = []
+    for fname in instances.keys():
+        # 파일명에서 카테고리명 복원 (예: 환경_기후.json -> 환경·기후)
+        cat_name = fname.replace(".json", "").replace("_", "·")
+        actual_categories.append(cat_name)
+        
+    old_categories = old_categories_map.get(bid, [])
+    
+    # 2) & 3) 최종 카테고리 결정
+    final_cats = set(declared_categories)
+    
+    # 예전엔 있었는데 실제로 파일 목록에서 지워진 것은 사용자가 삭제한 것임
+    for c in old_categories:
+        if c not in actual_categories:
+            final_cats.discard(c)
+            
+    # 최종 리스트로 변환
+    final_cats_list = sorted(list(final_cats))
     
     bill_info = dict(best_bill_data)
-    bill_info["categories"] = final_categories
+    bill_info["categories"] = final_cats_list
     final_bills[bid] = bill_info
+    
+    # 변경 사항 감지되면 로그 출력
+    if set(old_categories) != set(final_cats_list):
+        print(f"Adjusted Categories for '{bill_info['bill_name']}': {old_categories} -> {final_cats_list}")
 
-print(f"Total unique bills found: {len(final_bills)}")
-
-# 4. 최종 카테고리에 맞춰 법안 재배치
+# 5. 최종 카테고리에 맞춰 법안 재배치
 categorized_bills = {cat: [] for cat in CATEGORIES}
 for bid, bill_data in final_bills.items():
     cats = bill_data["categories"]
@@ -183,7 +223,7 @@ for bid, bill_data in final_bills.items():
         if cat in categorized_bills:
             categorized_bills[cat].append(bill_data)
 
-# 5. 각 카테고리별 개수 분석 및 보고
+# 각 카테고리별 개수 분석
 print("\n=== After Reallocation ===")
 for cat, bills in categorized_bills.items():
     print(f"  {cat}: {len(bills)} bills")
@@ -260,19 +300,16 @@ def classify_bill(bill_name, summary_text):
 existing_bill_ids = set(final_bills.keys())
 
 print("\n=== Fetching new bills for missing categories ===")
-# 22대 국회부터 수집
-page_index = 3 # 1, 2 페이지는 이미 돌았으므로 3페이지부터 탐색 시작
 max_pages = 50
 ages = ["22", "21"]
 
 for age in ages:
-    # 모든 카테고리가 10개 이상이면 중단
     all_filled = all(len(bills) >= TARGET_PER_CATEGORY for bills in categorized_bills.values())
     if all_filled:
         break
         
     print(f"\nSearching in {age}대 assembly...")
-    page_index = 3 if age == "22" else 1
+    page_index = 4 if age == "22" else 1 # 이전 수집 내역(3페이지) 이후인 4페이지부터 시작
     
     while page_index <= max_pages:
         all_filled = all(len(bills) >= TARGET_PER_CATEGORY for bills in categorized_bills.values())
@@ -302,12 +339,6 @@ for age in ages:
                 continue
                 
             # 부족한 카테고리가 있는지 확인
-            summary = None
-            categories = None
-            
-            # API 호출 최소화 위해 먼저 판단
-            # 일단 가볍게 API 호출해서 채울만한 가치가 있는지
-            # categories 분류를 위해 summary가 필요하므로 가져옴
             summary = fetch_bill_summary(bill_id)
             if not summary or len(summary) < 50:
                 continue
