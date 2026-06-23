@@ -1,0 +1,503 @@
+{
+  "selected_source_bills": [
+    {
+      "priority_rank": 1,
+      "bill_id": "PRC_W2C6B0A5Z1I9E0I9F3O7N0M7G4F2E2",
+      "bill_name": "위치정보의 보호 및 이용 등에 관한 법률 일부개정법률안",
+      "manual_categories": [
+        "디지털",
+        "생활안전"
+      ],
+      "estimated_domain": "디지털",
+      "difficulty": "hard",
+      "selection_score": 52.0,
+      "selection_reason": "요약문 길이 1220자, 패턴 5개 감지. 추정 분야 '디지털'(누적 1개) 및 난이도 'hard'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 1220,
+      "detected_patterns": [
+        "현행법",
+        "그러나",
+        "이에",
+        "안 제",
+        "개정"
+      ]
+    },
+    {
+      "priority_rank": 2,
+      "bill_id": "PRC_F2E6S0P6O0M8T1S6R5Q9W3V6U0T2A4",
+      "bill_name": "장애인활동 지원에 관한 법률 일부개정법률안",
+      "manual_categories": [
+        "복지",
+        "정치·행정"
+      ],
+      "estimated_domain": "복지",
+      "difficulty": "medium",
+      "selection_score": 50.44,
+      "selection_reason": "요약문 길이 1044자, 패턴 5개 감지. 추정 분야 '복지'(누적 1개) 및 난이도 'medium'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 1044,
+      "detected_patterns": [
+        "그러나",
+        "이에",
+        "안 제",
+        "신설",
+        "개정"
+      ]
+    },
+    {
+      "priority_rank": 3,
+      "bill_id": "PRC_A2Z6I0J6I0O8N1M6L4T7S1R3L1N7V0",
+      "bill_name": "국민건강보험법 일부개정법률안",
+      "manual_categories": [
+        "보건",
+        "정치·행정"
+      ],
+      "estimated_domain": "행정",
+      "difficulty": "hard",
+      "selection_score": 48.5,
+      "selection_reason": "요약문 길이 1298자, 패턴 5개 감지. 추정 분야 '행정'(누적 1개) 및 난이도 'hard'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 1298,
+      "detected_patterns": [
+        "그러나",
+        "이에",
+        "안 제",
+        "신설",
+        "개정"
+      ]
+    },
+    {
+      "priority_rank": 4,
+      "bill_id": "PRC_A2H6F0N6J0I9F1C4B4J1T2S6P6L4L9",
+      "bill_name": "자본시장과 금융투자업에 관한 법률 일부개정법률안",
+      "manual_categories": [
+        "환경·기후"
+      ],
+      "estimated_domain": "경제",
+      "difficulty": "medium",
+      "selection_score": 47.02,
+      "selection_reason": "요약문 길이 952자, 패턴 5개 감지. 추정 분야 '경제'(누적 1개) 및 난이도 'medium'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 952,
+      "detected_patterns": [
+        "현행법",
+        "그러나",
+        "이에",
+        "안 제",
+        "신설"
+      ]
+    },
+    {
+      "priority_rank": 5,
+      "bill_id": "PRC_N2T6S0R5X2W7V0R9I5F7C4B5K2J4G4",
+      "bill_name": "고용보험법 일부개정법률안",
+      "manual_categories": [
+        "노동"
+      ],
+      "estimated_domain": "노동",
+      "difficulty": "easy",
+      "selection_score": 46.04,
+      "selection_reason": "요약문 길이 604자, 패턴 5개 감지. 추정 분야 '노동'(누적 1개) 및 난이도 'easy'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 604,
+      "detected_patterns": [
+        "현행법",
+        "그러나",
+        "이에",
+        "안 제",
+        "개정"
+      ]
+    },
+    {
+      "priority_rank": 6,
+      "bill_id": "PRC_A2X6W0F6E1D7C1Y3X5V3U2B3A8Y9H4",
+      "bill_name": "특허법 일부개정법률안",
+      "manual_categories": [
+        "생활안전"
+      ],
+      "estimated_domain": "형사",
+      "difficulty": "hard",
+      "selection_score": 45.0,
+      "selection_reason": "요약문 길이 1598자, 패턴 5개 감지. 추정 분야 '형사'(누적 1개) 및 난이도 'hard'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 1598,
+      "detected_patterns": [
+        "현행법",
+        "그러나",
+        "이에",
+        "안 제",
+        "개정"
+      ]
+    },
+    {
+      "priority_rank": 7,
+      "bill_id": "PRC_A2Z6Y0E6D1C0G1M0L1K8J5G9F8B0K7",
+      "bill_name": "전자상거래 등에서의 소비자보호에 관한 법률 일부개정법률안",
+      "manual_categories": [
+        "디지털"
+      ],
+      "estimated_domain": "환경",
+      "difficulty": "easy",
+      "selection_score": 42.48,
+      "selection_reason": "요약문 길이 698자, 패턴 5개 감지. 추정 분야 '환경'(누적 1개) 및 난이도 'easy'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 698,
+      "detected_patterns": [
+        "현행법",
+        "그러나",
+        "이에",
+        "안 제",
+        "개정"
+      ]
+    },
+    {
+      "priority_rank": 8,
+      "bill_id": "PRC_P2P6O0M6M1L8M1T0U1S3R4R2P9Q0M6",
+      "bill_name": "농어업인 삶의 질 향상 및 농어촌지역 개발촉진에 관한 특별법 일부개정법률안",
+      "manual_categories": [
+        "교육",
+        "복지"
+      ],
+      "estimated_domain": "교육",
+      "difficulty": "medium",
+      "selection_score": 40.16,
+      "selection_reason": "요약문 길이 616자, 패턴 5개 감지. 추정 분야 '교육'(누적 1개) 및 난이도 'medium'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 616,
+      "detected_patterns": [
+        "현행법",
+        "그런데",
+        "이에",
+        "안 제",
+        "신설"
+      ]
+    },
+    {
+      "priority_rank": 9,
+      "bill_id": "PRC_D2E6C0K6J1K8I1H4P5O2P1N7M5U6V8",
+      "bill_name": "주택임대차보호법 일부개정법률안",
+      "manual_categories": [
+        "주거"
+      ],
+      "estimated_domain": "주거",
+      "difficulty": "easy",
+      "selection_score": 38.4,
+      "selection_reason": "요약문 길이 340자, 패턴 5개 감지. 추정 분야 '주거'(누적 1개) 및 난이도 'easy'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 340,
+      "detected_patterns": [
+        "현행법",
+        "그러나",
+        "이에",
+        "안 제",
+        "신설"
+      ]
+    },
+    {
+      "priority_rank": 10,
+      "bill_id": "PRC_F2L6K0J6S0P8O1W6V5R4Q5Z9V7U1D2",
+      "bill_name": "의료급여법 일부개정법률안",
+      "manual_categories": [
+        "보건",
+        "정치·행정"
+      ],
+      "estimated_domain": "행정",
+      "difficulty": "hard",
+      "selection_score": 37.5,
+      "selection_reason": "요약문 길이 1229자, 패턴 5개 감지. 추정 분야 '행정'(누적 2개) 및 난이도 'hard'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 1229,
+      "detected_patterns": [
+        "그러나",
+        "이에",
+        "안 제",
+        "신설",
+        "개정"
+      ]
+    },
+    {
+      "priority_rank": 11,
+      "bill_id": "PRC_L2J6S0R6W0W9V0B9A0Z3Y5T1R6Q8C3",
+      "bill_name": "건설산업기본법 일부개정법률안",
+      "manual_categories": [
+        "경제",
+        "주거"
+      ],
+      "estimated_domain": "경제",
+      "difficulty": "medium",
+      "selection_score": 35.28,
+      "selection_reason": "요약문 길이 778자, 패턴 5개 감지. 추정 분야 '경제'(누적 2개) 및 난이도 'medium'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 778,
+      "detected_patterns": [
+        "현행법",
+        "그런데",
+        "이에",
+        "안 제",
+        "개정"
+      ]
+    },
+    {
+      "priority_rank": 12,
+      "bill_id": "PRC_A2Y6X0X6T1U7S1S3X5W7U2U3C2D6B7",
+      "bill_name": "실용신안법 일부개정법률안",
+      "manual_categories": [
+        "생활안전"
+      ],
+      "estimated_domain": "형사",
+      "difficulty": "hard",
+      "selection_score": 34.0,
+      "selection_reason": "요약문 길이 1648자, 패턴 5개 감지. 추정 분야 '형사'(누적 2개) 및 난이도 'hard'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 1648,
+      "detected_patterns": [
+        "현행법",
+        "그러나",
+        "이에",
+        "안 제",
+        "개정"
+      ]
+    },
+    {
+      "priority_rank": 13,
+      "bill_id": "PRC_X2W6T0C6B0Z9G1F6B3A6J4I5F9N2N0",
+      "bill_name": "사립대학의 구조개선 지원에 관한 법률 일부개정법률안",
+      "manual_categories": [
+        "교육"
+      ],
+      "estimated_domain": "복지",
+      "difficulty": "easy",
+      "selection_score": 32.17,
+      "selection_reason": "요약문 길이 567자, 패턴 5개 감지. 추정 분야 '복지'(누적 2개) 및 난이도 'easy'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 567,
+      "detected_patterns": [
+        "현행법",
+        "그런데",
+        "이에",
+        "안 제",
+        "신설"
+      ]
+    },
+    {
+      "priority_rank": 14,
+      "bill_id": "PRC_L2L6K0I6J1H1I1X0V2W6U4U9T8U7B1",
+      "bill_name": "근로자참여 및 협력증진에 관한 법률 일부개정법률안",
+      "manual_categories": [
+        "노동"
+      ],
+      "estimated_domain": "노동",
+      "difficulty": "medium",
+      "selection_score": 31.07,
+      "selection_reason": "요약문 길이 907자, 패턴 4개 감지. 추정 분야 '노동'(누적 2개) 및 난이도 'medium'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 907,
+      "detected_patterns": [
+        "현행법",
+        "이에",
+        "안 제",
+        "신설"
+      ]
+    },
+    {
+      "priority_rank": 15,
+      "bill_id": "PRC_V2D6E0C6D1B2A1A3I5J1H3G9G9E2F3",
+      "bill_name": "조세특례제한법 일부개정법률안",
+      "manual_categories": [
+        "경제"
+      ],
+      "estimated_domain": "보건의료",
+      "difficulty": "hard",
+      "selection_score": 29.35,
+      "selection_reason": "요약문 길이 385자, 패턴 5개 감지. 추정 분야 '보건의료'(누적 1개) 및 난이도 'hard'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 385,
+      "detected_patterns": [
+        "현행법",
+        "그러나",
+        "이에",
+        "안 제",
+        "신설"
+      ]
+    },
+    {
+      "priority_rank": 16,
+      "bill_id": "PRC_K2J6K0R6Q0P8X1U3T5B9B0Z2X7D0D8",
+      "bill_name": "환경오염시설의 통합관리에 관한 법률 일부개정법률안",
+      "manual_categories": [
+        "환경·기후"
+      ],
+      "estimated_domain": "환경",
+      "difficulty": "easy",
+      "selection_score": 28.13,
+      "selection_reason": "요약문 길이 613자, 패턴 4개 감지. 추정 분야 '환경'(누적 2개) 및 난이도 'easy'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 613,
+      "detected_patterns": [
+        "현행법",
+        "그러나",
+        "이에",
+        "안 제"
+      ]
+    },
+    {
+      "priority_rank": 17,
+      "bill_id": "PRC_F2L6K0J5Q1P9O0W9W3S5R0Y8X6W2V2",
+      "bill_name": "정보통신망 이용촉진 및 정보보호 등에 관한 법률 일부개정법률안",
+      "manual_categories": [
+        "디지털",
+        "생활안전"
+      ],
+      "estimated_domain": "디지털",
+      "difficulty": "hard",
+      "selection_score": 25.12,
+      "selection_reason": "요약문 길이 1112자, 패턴 4개 감지. 추정 분야 '디지털'(누적 2개) 및 난이도 'hard'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 1112,
+      "detected_patterns": [
+        "그러나",
+        "이에",
+        "안 제",
+        "신설"
+      ]
+    },
+    {
+      "priority_rank": 18,
+      "bill_id": "PRC_O2P6N0M6M1K8L1H0H1G4E5F0D5E7M4",
+      "bill_name": "평생교육법 일부개정법률안",
+      "manual_categories": [
+        "교육",
+        "복지"
+      ],
+      "estimated_domain": "교육",
+      "difficulty": "medium",
+      "selection_score": 24.38,
+      "selection_reason": "요약문 길이 488자, 패턴 5개 감지. 추정 분야 '교육'(누적 2개) 및 난이도 'medium'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 488,
+      "detected_patterns": [
+        "현행법",
+        "그런데",
+        "이에",
+        "안 제",
+        "신설"
+      ]
+    },
+    {
+      "priority_rank": 19,
+      "bill_id": "PRC_O2O6M0N6V1W5U1T0T0R9S4O6O2N5L1",
+      "bill_name": "농지법 일부개정법률안",
+      "manual_categories": [
+        "주거"
+      ],
+      "estimated_domain": "주거",
+      "difficulty": "easy",
+      "selection_score": 21.61,
+      "selection_reason": "요약문 길이 411자, 패턴 4개 감지. 추정 분야 '주거'(누적 2개) 및 난이도 'easy'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 411,
+      "detected_patterns": [
+        "현행법",
+        "그런데",
+        "이에",
+        "안 제"
+      ]
+    },
+    {
+      "priority_rank": 20,
+      "bill_id": "PRC_K2H6G0P6O0L8H1V6U4U8O2N4M2K2T5",
+      "bill_name": "긴급복지지원법 일부개정법률안",
+      "manual_categories": [
+        "복지",
+        "정치·행정"
+      ],
+      "estimated_domain": "복지",
+      "difficulty": "medium",
+      "selection_score": 20.82,
+      "selection_reason": "요약문 길이 982자, 패턴 5개 감지. 추정 분야 '복지'(누적 3개) 및 난이도 'medium'의 법안으로서 균형적 평가를 위해 선정됨.",
+      "summary_length": 982,
+      "detected_patterns": [
+        "그러나",
+        "이에",
+        "안 제",
+        "신설",
+        "개정"
+      ]
+    }
+  ],
+  "quick_10_subset": [
+    {
+      "priority_rank": 1,
+      "bill_id": "PRC_W2C6B0A5Z1I9E0I9F3O7N0M7G4F2E2",
+      "bill_name": "위치정보의 보호 및 이용 등에 관한 법률 일부개정법률안",
+      "reason": "추정 분야 '디지털'을 대표하는 우선 평가 대상 법안 (hard 난이도)"
+    },
+    {
+      "priority_rank": 2,
+      "bill_id": "PRC_F2E6S0P6O0M8T1S6R5Q9W3V6U0T2A4",
+      "bill_name": "장애인활동 지원에 관한 법률 일부개정법률안",
+      "reason": "추정 분야 '복지'을 대표하는 우선 평가 대상 법안 (medium 난이도)"
+    },
+    {
+      "priority_rank": 3,
+      "bill_id": "PRC_A2Z6I0J6I0O8N1M6L4T7S1R3L1N7V0",
+      "bill_name": "국민건강보험법 일부개정법률안",
+      "reason": "추정 분야 '행정'을 대표하는 우선 평가 대상 법안 (hard 난이도)"
+    },
+    {
+      "priority_rank": 4,
+      "bill_id": "PRC_A2H6F0N6J0I9F1C4B4J1T2S6P6L4L9",
+      "bill_name": "자본시장과 금융투자업에 관한 법률 일부개정법률안",
+      "reason": "추정 분야 '경제'을 대표하는 우선 평가 대상 법안 (medium 난이도)"
+    },
+    {
+      "priority_rank": 5,
+      "bill_id": "PRC_N2T6S0R5X2W7V0R9I5F7C4B5K2J4G4",
+      "bill_name": "고용보험법 일부개정법률안",
+      "reason": "추정 분야 '노동'을 대표하는 우선 평가 대상 법안 (easy 난이도)"
+    },
+    {
+      "priority_rank": 6,
+      "bill_id": "PRC_A2X6W0F6E1D7C1Y3X5V3U2B3A8Y9H4",
+      "bill_name": "특허법 일부개정법률안",
+      "reason": "추정 분야 '형사'을 대표하는 우선 평가 대상 법안 (hard 난이도)"
+    },
+    {
+      "priority_rank": 7,
+      "bill_id": "PRC_A2Z6Y0E6D1C0G1M0L1K8J5G9F8B0K7",
+      "bill_name": "전자상거래 등에서의 소비자보호에 관한 법률 일부개정법률안",
+      "reason": "추정 분야 '환경'을 대표하는 우선 평가 대상 법안 (easy 난이도)"
+    },
+    {
+      "priority_rank": 8,
+      "bill_id": "PRC_P2P6O0M6M1L8M1T0U1S3R4R2P9Q0M6",
+      "bill_name": "농어업인 삶의 질 향상 및 농어촌지역 개발촉진에 관한 특별법 일부개정법률안",
+      "reason": "추정 분야 '교육'을 대표하는 우선 평가 대상 법안 (medium 난이도)"
+    },
+    {
+      "priority_rank": 9,
+      "bill_id": "PRC_D2E6C0K6J1K8I1H4P5O2P1N7M5U6V8",
+      "bill_name": "주택임대차보호법 일부개정법률안",
+      "reason": "추정 분야 '주거'을 대표하는 우선 평가 대상 법안 (easy 난이도)"
+    },
+    {
+      "priority_rank": 10,
+      "bill_id": "PRC_V2D6E0C6D1B2A1A3I5J1H3G9G9E2F3",
+      "bill_name": "조세특례제한법 일부개정법률안",
+      "reason": "추정 분야 '보건의료'을 대표하는 우선 평가 대상 법안 (hard 난이도)"
+    }
+  ],
+  "coverage_summary": {
+    "domain_distribution": {
+      "노동": 2,
+      "교육": 2,
+      "주거": 2,
+      "복지": 3,
+      "디지털": 2,
+      "형사": 2,
+      "환경": 2,
+      "보건의료": 1,
+      "행정": 2,
+      "경제": 2
+    },
+    "manual_category_distribution": {
+      "디지털": 3,
+      "생활안전": 4,
+      "복지": 4,
+      "정치·행정": 4,
+      "보건": 2,
+      "환경·기후": 2,
+      "노동": 2,
+      "교육": 3,
+      "주거": 3,
+      "경제": 2
+    },
+    "difficulty_distribution": {
+      "easy": 6,
+      "medium": 7,
+      "hard": 7
+    },
+    "notes": "유효 법안 70개 중 평가용 소스 법안 20개를 자동 선정했습니다. 10대 도메인 분포를 1~3개 범위로 유지하여 분야의 다변화를 달성했으며, 난이도는 easy 6개, medium 7개, hard 7개로 적절히 분배되었습니다."
+  }
+}

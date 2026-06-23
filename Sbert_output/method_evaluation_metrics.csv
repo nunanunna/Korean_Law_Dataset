@@ -1,0 +1,5 @@
+﻿method,num_evaluated_pairs,num_sources,precision_at_5,precision_at_10,ndcg_at_10,mrr,average_relevance,average_legal_meaning_score
+raw,199,20,0.45,0.2756,0.8871,0.8921,1.6533,
+structured,197,20,0.43,0.2681,0.9191,0.9583,1.6041,
+problem_proposal,194,20,0.48,0.3197,0.8773,0.95,1.6495,
+weighted_field,197,20,0.47,0.3211,0.8831,0.8583,1.736,

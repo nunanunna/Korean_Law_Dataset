@@ -1,0 +1,50 @@
+{
+  "description": "법률 유사도 알고리즘 메소드별 평가 결과",
+  "relevance_threshold": 3,
+  "metrics": [
+    {
+      "method": "raw",
+      "num_evaluated_pairs": 199,
+      "num_sources": 20,
+      "precision_at_5": 0.45,
+      "precision_at_10": 0.2756,
+      "ndcg_at_10": 0.8871,
+      "mrr": 0.8921,
+      "average_relevance": 1.6533,
+      "average_legal_meaning_score": null
+    },
+    {
+      "method": "structured",
+      "num_evaluated_pairs": 197,
+      "num_sources": 20,
+      "precision_at_5": 0.43,
+      "precision_at_10": 0.2681,
+      "ndcg_at_10": 0.9191,
+      "mrr": 0.9583,
+      "average_relevance": 1.6041,
+      "average_legal_meaning_score": null
+    },
+    {
+      "method": "problem_proposal",
+      "num_evaluated_pairs": 194,
+      "num_sources": 20,
+      "precision_at_5": 0.48,
+      "precision_at_10": 0.3197,
+      "ndcg_at_10": 0.8773,
+      "mrr": 0.95,
+      "average_relevance": 1.6495,
+      "average_legal_meaning_score": null
+    },
+    {
+      "method": "weighted_field",
+      "num_evaluated_pairs": 197,
+      "num_sources": 20,
+      "precision_at_5": 0.47,
+      "precision_at_10": 0.3211,
+      "ndcg_at_10": 0.8831,
+      "mrr": 0.8583,
+      "average_relevance": 1.736,
+      "average_legal_meaning_score": null
+    }
+  ]
+}
