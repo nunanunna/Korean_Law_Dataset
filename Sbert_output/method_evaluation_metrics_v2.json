@@ -1,0 +1,86 @@
+[
+  {
+    "method": "raw",
+    "num_evaluated_pairs": 199,
+    "num_unlabeled_pairs": 0,
+    "num_sources": 20,
+    "precision_at_5": 0.45,
+    "precision_at_10": 0.2756,
+    "ndcg_at_10": 0.8871,
+    "mrr": 0.8921,
+    "average_relevance": 1.6533,
+    "average_legal_meaning_score": null
+  },
+  {
+    "method": "structured",
+    "num_evaluated_pairs": 197,
+    "num_unlabeled_pairs": 0,
+    "num_sources": 20,
+    "precision_at_5": 0.43,
+    "precision_at_10": 0.2681,
+    "ndcg_at_10": 0.9191,
+    "mrr": 0.9583,
+    "average_relevance": 1.6041,
+    "average_legal_meaning_score": null
+  },
+  {
+    "method": "problem_proposal",
+    "num_evaluated_pairs": 194,
+    "num_unlabeled_pairs": 0,
+    "num_sources": 20,
+    "precision_at_5": 0.48,
+    "precision_at_10": 0.3197,
+    "ndcg_at_10": 0.8773,
+    "mrr": 0.95,
+    "average_relevance": 1.6495,
+    "average_legal_meaning_score": null
+  },
+  {
+    "method": "weighted_field",
+    "num_evaluated_pairs": 197,
+    "num_unlabeled_pairs": 0,
+    "num_sources": 20,
+    "precision_at_5": 0.47,
+    "precision_at_10": 0.3211,
+    "ndcg_at_10": 0.8831,
+    "mrr": 0.8583,
+    "average_relevance": 1.736,
+    "average_legal_meaning_score": null
+  },
+  {
+    "method": "cleaned_problem_proposal",
+    "num_evaluated_pairs": 179,
+    "num_unlabeled_pairs": 20,
+    "num_sources": 20,
+    "precision_at_5": 0.46,
+    "precision_at_10": 0.3456,
+    "ndcg_at_10": 0.8598,
+    "mrr": 0.8988,
+    "average_relevance": 1.7933,
+    "average_legal_meaning_score": null
+  },
+  {
+    "method": "keyword_tfidf",
+    "num_evaluated_pairs": 83,
+    "num_unlabeled_pairs": 115,
+    "num_sources": 20,
+    "precision_at_5": 0.415,
+    "precision_at_10": 0.3882,
+    "ndcg_at_10": 0.8804,
+    "mrr": 0.5767,
+    "average_relevance": 2.2289,
+    "average_legal_meaning_score": null
+  },
+  {
+    "method": "hybrid_cleaned",
+    "num_evaluated_pairs": 157,
+    "num_unlabeled_pairs": 43,
+    "num_sources": 20,
+    "precision_at_5": 0.505,
+    "precision_at_10": 0.3764,
+    "ndcg_at_10": 0.8127,
+    "mrr": 0.7308,
+    "average_relevance": 1.9045,
+    "average_legal_meaning_score": null
+  }
+]
