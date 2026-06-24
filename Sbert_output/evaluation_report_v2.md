@@ -25,19 +25,19 @@
 ## 3. 평가 데이터 통계
 
 - **전체 평가 대상 풀 (v2)**: 503쌍
-- **라벨 완료 (지표 평가에 사용됨)**: 359쌍 (기존 인간 라벨 100% 보존)
-- **라벨 대기 (추후 라벨링 대상)**: 144쌍 (새로 추가된 추천 후보군)
+- **라벨 완료 (지표 평가에 사용됨)**: 503쌍 (기존 인간 라벨 100% 보존)
+- **라벨 대기 (추후 라벨링 대상)**: 0쌍 (새로 추가된 추천 후보군)
 - **Source 법안 수**: 20개
 
 ### 관련도 점수 분포 (라벨 완료 359쌍 기준)
 
 | 점수 | 건수 | 비율 |
 |:---:|-----:|-----:|
-| 0 | 143 | 39.8% |
-| 1 | 88 | 24.5% |
-| 2 | 54 | 15.0% |
-| 3 | 35 | 9.7% |
-| 4 | 39 | 10.9% |
+| 0 | 233 | 46.3% |
+| 1 | 120 | 23.9% |
+| 2 | 67 | 13.3% |
+| 3 | 41 | 8.2% |
+| 4 | 42 | 8.3% |
 
 ## 4. 인간 라벨링 평정 기준
 
@@ -59,16 +59,16 @@
 | `structured` | 0.4300 | 0.2681 | 0.9191 | 0.9583 | 1.60 | 197 | 0 |
 | `problem_proposal` | 0.4800 | 0.3197 | 0.8773 | 0.9500 | 1.65 | 194 | 0 |
 | `weighted_field` | 0.4700 | 0.3211 | 0.8831 | 0.8583 | 1.74 | 197 | 0 |
-| `cleaned_problem_proposal` | 0.4600 | 0.3456 | 0.8598 | 0.8988 | 1.79 | 179 | 20 |
-| `keyword_tfidf` | 0.4150 | 0.3882 | 0.8804 | 0.5767 | 2.23 | 83 | 115 |
-| `hybrid_cleaned` | 0.5050 | 0.3764 | 0.8127 | 0.7308 | 1.90 | 157 | 43 |
+| `cleaned_problem_proposal` | 0.4600 | 0.3156 | 0.8564 | 0.8988 | 1.68 | 199 | 0 |
+| `keyword_tfidf` | 0.3500 | 0.2400 | 0.8030 | 0.6271 | 1.31 | 198 | 0 |
+| `hybrid_cleaned` | 0.5000 | 0.3300 | 0.8039 | 0.7030 | 1.68 | 200 | 0 |
 
 ## 6. 핵심 성과 분석 및 우수 메소드 비교
 
 ### 지표별 최우수 알고리즘
 
-- **Precision@5 1위**: `hybrid_cleaned` (0.5050)
-- **Precision@10 1위**: `keyword_tfidf` (0.3882)
+- **Precision@5 1위**: `hybrid_cleaned` (0.5000)
+- **Precision@10 1위**: `hybrid_cleaned` (0.3300)
 - **nDCG@10 1위**: `structured` (0.9191)
 - **MRR 1위**: `structured` (0.9583)
 
@@ -85,16 +85,16 @@
 
 | # | source 법안 | target 법안 | 관련도 | 오인 메소드 | rank | 추천된 전체 정보 |
 |---|-----------|-----------|:-----:|-----------|:----:|------------|
-| 1 | 자본시장과 금융투자업에 관한 법률 | 장애인활동 지원에 관한 법률 일부 | 1 | raw | 3 | raw(#3, 0.947) | structured(#2, 0.945) |
-| 2 | 자본시장과 금융투자업에 관한 법률 | 지방세특례제한법 일부개정법률안 | 1 | problem_proposal | 2 | problem_proposal(#2, 0.459) | weighted_field(#5, 0.607) | cleaned_problem_proposal(#5, 0.539) | hybrid_cleaned(#9, 0.418) |
-| 3 | 자본시장과 금융투자업에 관한 법률 | 산업집적활성화 및 공장설립에 관한 | 1 | problem_proposal | 3 | raw(#10, 0.916) | problem_proposal(#3, 0.456) | cleaned_problem_proposal(#2, 0.609) | hybrid_cleaned(#3, 0.492) |
-| 4 | 자본시장과 금융투자업에 관한 법률 | 근로기준법 일부개정법률안 | 1 | structured | 3 | raw(#4, 0.931) | structured(#3, 0.934) | keyword_tfidf(#7, 0.020) |
-| 5 | 자본시장과 금융투자업에 관한 법률 | 농지법 일부개정법률안 | 0 | keyword_tfidf | 3 | raw(#8, 0.921) | keyword_tfidf(#3, 0.023) |
-| 6 | 자본시장과 금융투자업에 관한 법률 | 국민건강보험법 일부개정법률안 | 0 | cleaned_problem_proposal | 3 | weighted_field(#8, 0.579) | cleaned_problem_proposal(#3, 0.566) | hybrid_cleaned(#6, 0.457) |
-| 7 | 실용신안법 일부개정법률안 | 특정범죄신고자 등 보호법 일부개정 | 0 | raw | 2 | raw(#2, 0.987) | structured(#2, 0.984) | problem_proposal(#2, 0.988) | weighted_field(#2, 0.942) | cleaned_problem_proposal(#2, 0.987) | keyword_tfidf(#7, 0.021) | hybrid_cleaned(#2, 0.696) |
-| 8 | 실용신안법 일부개정법률안 | 정보통신망 이용촉진 및 정보보호  | 1 | raw | 3 | raw(#3, 0.937) | structured(#3, 0.941) | problem_proposal(#8, 0.914) | weighted_field(#3, 0.920) | cleaned_problem_proposal(#9, 0.909) | hybrid_cleaned(#9, 0.638) |
-| 9 | 전자상거래 등에서의 소비자보호에  | 정보통신망 이용촉진 및 정보보호  | 1 | problem_proposal | 2 | problem_proposal(#2, 0.914) | weighted_field(#1, 0.884) | cleaned_problem_proposal(#3, 0.941) | keyword_tfidf(#6, 0.015) | hybrid_cleaned(#3, 0.760) |
-| 10 | 전자상거래 등에서의 소비자보호에  | 마약류 관리에 관한 법률 일부개정 | 0 | keyword_tfidf | 2 | problem_proposal(#10, 0.846) | keyword_tfidf(#2, 0.030) | hybrid_cleaned(#1, 0.826) |
+| 1 | 자본시장과 금융투자업에 관한 법률 | 남녀고용평등과 일·가정 양립 지원 | 1 | keyword_tfidf | 1 | keyword_tfidf(#1, 0.024) |
+| 2 | 자본시장과 금융투자업에 관한 법률 | 장애인활동 지원에 관한 법률 일부 | 1 | raw | 3 | raw(#3, 0.947) | structured(#2, 0.945) |
+| 3 | 자본시장과 금융투자업에 관한 법률 | 지방세특례제한법 일부개정법률안 | 1 | problem_proposal | 2 | problem_proposal(#2, 0.459) | weighted_field(#5, 0.607) | cleaned_problem_proposal(#5, 0.539) | hybrid_cleaned(#9, 0.418) |
+| 4 | 자본시장과 금융투자업에 관한 법률 | 산업집적활성화 및 공장설립에 관한 | 1 | problem_proposal | 3 | raw(#10, 0.916) | problem_proposal(#3, 0.456) | cleaned_problem_proposal(#2, 0.609) | hybrid_cleaned(#3, 0.492) |
+| 5 | 자본시장과 금융투자업에 관한 법률 | 농어촌구조개선 특별회계법 일부개정 | 0 | hybrid_cleaned | 2 | cleaned_problem_proposal(#4, 0.547) | hybrid_cleaned(#2, 0.510) |
+| 6 | 자본시장과 금융투자업에 관한 법률 | 근로기준법 일부개정법률안 | 1 | structured | 3 | raw(#4, 0.931) | structured(#3, 0.934) | keyword_tfidf(#7, 0.020) |
+| 7 | 자본시장과 금융투자업에 관한 법률 | 농지법 일부개정법률안 | 0 | keyword_tfidf | 3 | raw(#8, 0.921) | keyword_tfidf(#3, 0.023) |
+| 8 | 자본시장과 금융투자업에 관한 법률 | 국민건강보험법 일부개정법률안 | 0 | cleaned_problem_proposal | 3 | weighted_field(#8, 0.579) | cleaned_problem_proposal(#3, 0.566) | hybrid_cleaned(#6, 0.457) |
+| 9 | 실용신안법 일부개정법률안 | 특정범죄신고자 등 보호법 일부개정 | 0 | raw | 2 | raw(#2, 0.987) | structured(#2, 0.984) | problem_proposal(#2, 0.988) | weighted_field(#2, 0.942) | cleaned_problem_proposal(#2, 0.987) | keyword_tfidf(#7, 0.021) | hybrid_cleaned(#2, 0.696) |
+| 10 | 실용신안법 일부개정법률안 | 정보통신망 이용촉진 및 정보보호  | 1 | raw | 3 | raw(#3, 0.937) | structured(#3, 0.941) | problem_proposal(#8, 0.914) | weighted_field(#3, 0.920) | cleaned_problem_proposal(#9, 0.909) | hybrid_cleaned(#9, 0.638) |
 
 
 ### 7.2 특정 메소드에서는 탐지되었으나 다른 메소드에서는 누락된 관련 법안(relevance ≥ 3)
@@ -110,8 +110,8 @@
 | 6 | 실용신안법 일부개정법률안 | 정보통신망 이용촉진 및 정보보호  | 3 | raw, problem_proposal, weighted_field, cleaned_problem_proposal, hybrid_cleaned | structured, keyword_tfidf | 3 |
 | 7 | 국민건강보험법 일부개정법률안 | 국민건강보험법 일부개정법률안 | 4 | raw, structured, cleaned_problem_proposal, keyword_tfidf, hybrid_cleaned | problem_proposal, weighted_field | 2 |
 | 8 | 국민건강보험법 일부개정법률안 | 필수의료 강화 지원 및 지역 간  | 3 | problem_proposal, weighted_field, cleaned_problem_proposal, hybrid_cleaned | raw, structured, keyword_tfidf | 2 |
-| 9 | 국민건강보험법 일부개정법률안 | 조세특례제한법 일부개정법률안 | 3 | problem_proposal, weighted_field, cleaned_problem_proposal, hybrid_cleaned | raw, structured, keyword_tfidf | 3 |
-| 10 | 국민건강보험법 일부개정법률안 | 장애인연금법 일부개정법률안 | 3 | problem_proposal, cleaned_problem_proposal, keyword_tfidf, hybrid_cleaned | raw, structured, weighted_field | 3 |
+| 9 | 국민건강보험법 일부개정법률안 | 도로교통법 일부개정법률안 | 4 | keyword_tfidf | raw, structured, problem_proposal, weighted_field, cleaned_problem_proposal, hybrid_cleaned | 2 |
+| 10 | 국민건강보험법 일부개정법률안 | 조세특례제한법 일부개정법률안 | 3 | problem_proposal, weighted_field, cleaned_problem_proposal, hybrid_cleaned | raw, structured, keyword_tfidf | 3 |
 
 
 ### 7.3 유사도 계산 점수 편차가 매우 큰 법안 쌍 (diff > 0.15)
@@ -129,14 +129,3 @@
 | 8 | 건설산업기본법 일부개정법률안 | 집합건물의 소유 및 관리에 관한  | 4 | 0.1538 | raw(#1, 0.833) | structured(#1, 0.790) | problem_proposal(#2, 0.920) | weighted_field(#2, 0.757) | cleaned_problem_proposal(#7, 0.944) |
 | 9 | 건설산업기본법 일부개정법률안 | 주택임대차보호법 일부개정법률안 | 2 | 0.3523 | structured(#8, 0.604) | problem_proposal(#1, 0.934) | weighted_field(#10, 0.691) | cleaned_problem_proposal(#1, 0.957) |
 | 10 | 건설산업기본법 일부개정법률안 | 환경오염시설의 통합관리에 관한 법 | 2 | 0.3978 | raw(#7, 0.548) | structured(#2, 0.728) | problem_proposal(#8, 0.880) | weighted_field(#7, 0.726) | cleaned_problem_proposal(#5, 0.946) |
-
-
-## 8. 향후 개선 및 실험 방향
-
-1. **신규 144쌍 추가 라벨링 수행**: `evaluation_pooled_label_template_v2.xlsx` 파일의 비어 있는 관련도 컬럼을 완성하여 7개 알고리즘을 완전히 공평한 후보집합 상에서 재비교합니다.
-2. **하이브리드 결합 가중치 튜닝**: 현재 `0.7 : 0.2 : 0.1`인 결합 비율을 Grid Search 방식을 통해 P@5 또는 nDCG@10을 극대화하는 최적 가중치 비율로 튜닝합니다.
-3. **인접 조문 유사도 추가**: 현재 자카드 형태의 완전 일치 기준 조문 계산을 한 단계 발전시켜 인접 조문(예: 제5조와 제6조)에도 가중치를 부여하는 조문 매칭 보정을 구현합니다.
-
----
-
-*이 리포트는 `22_generate_evaluation_report_v2.py`에 의해 자동 생성되었습니다.*

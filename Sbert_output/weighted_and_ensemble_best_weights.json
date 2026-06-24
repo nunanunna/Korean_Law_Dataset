@@ -1,0 +1,272 @@
+{
+    "weighted_field": {
+        "best_by_objective_score": {
+            "weights": {
+                "w_title": 0.2,
+                "w_full": 0.2,
+                "w_current": 0.1,
+                "w_problem": 0.2,
+                "w_proposal": 0.2,
+                "w_article": 0.1
+            },
+            "metrics": {
+                "precision_at_5": 0.336,
+                "precision_at_10": 0.2394,
+                "ndcg_at_10": 0.8183,
+                "mrr": 0.6318,
+                "average_relevance": 1.4294,
+                "average_legal_meaning_score": 35.87,
+                "objective_score": 0.5399
+            }
+        },
+        "best_by_candidate_recall_objective": {
+            "weights": {
+                "w_title": 0.2,
+                "w_full": 0.15,
+                "w_current": 0.1,
+                "w_problem": 0.2,
+                "w_proposal": 0.25,
+                "w_article": 0.1
+            },
+            "metrics": {
+                "precision_at_5": 0.3333,
+                "precision_at_10": 0.2523,
+                "ndcg_at_10": 0.8022,
+                "mrr": 0.6375,
+                "average_relevance": 1.4548,
+                "average_legal_meaning_score": 36.46,
+                "candidate_recall_objective": 0.4529
+            }
+        },
+        "best_by_ranking_objective": {
+            "weights": {
+                "w_title": 0.2,
+                "w_full": 0.2,
+                "w_current": 0.05,
+                "w_problem": 0.2,
+                "w_proposal": 0.25,
+                "w_article": 0.1
+            },
+            "metrics": {
+                "precision_at_5": 0.3333,
+                "precision_at_10": 0.2399,
+                "ndcg_at_10": 0.8133,
+                "mrr": 0.6411,
+                "average_relevance": 1.4223,
+                "average_legal_meaning_score": 35.65,
+                "ranking_objective": 0.657
+            }
+        },
+        "train_validation_result": {
+            "fold0_train_best_weights": {
+                "w_title": 0.2,
+                "w_full": 0.25,
+                "w_current": 0.1,
+                "w_problem": 0.2,
+                "w_proposal": 0.2,
+                "w_article": 0.05
+            },
+            "fold0_val_metrics": {
+                "precision_at_5": 0.3467,
+                "precision_at_10": 0.2341,
+                "ndcg_at_10": 0.795,
+                "mrr": 0.6206,
+                "average_relevance": 1.3429,
+                "average_legal_meaning_score": 32.95,
+                "num_evaluated_pairs": 140,
+                "num_unlabeled_pairs": 10,
+                "num_sources": 15,
+                "objective_score": 0.536,
+                "candidate_recall_objective": 0.4286,
+                "ranking_objective": 0.6443
+            },
+            "cv_average_validation_objective_score": 0.5318
+        }
+    },
+    "final_ensemble": {
+        "best_by_objective_score": {
+            "weights": {
+                "w_raw": 0.1,
+                "w_structured": 0.1,
+                "w_problem_proposal": 0.1,
+                "w_weighted_field": 0.2,
+                "w_cleaned": 0.05,
+                "w_hybrid": 0.45
+            },
+            "metrics": {
+                "precision_at_5": 0.3787,
+                "precision_at_10": 0.2496,
+                "ndcg_at_10": 0.8121,
+                "mrr": 0.6549,
+                "average_relevance": 1.4469,
+                "average_legal_meaning_score": 36.19,
+                "objective_score": 0.564
+            }
+        },
+        "best_by_candidate_recall_objective": {
+            "weights": {
+                "w_raw": 0.1,
+                "w_structured": 0.1,
+                "w_problem_proposal": 0.1,
+                "w_weighted_field": 0.2,
+                "w_cleaned": 0.05,
+                "w_hybrid": 0.45
+            },
+            "metrics": {
+                "precision_at_5": 0.3787,
+                "precision_at_10": 0.2496,
+                "ndcg_at_10": 0.8121,
+                "mrr": 0.6549,
+                "average_relevance": 1.4469,
+                "average_legal_meaning_score": 36.19,
+                "candidate_recall_objective": 0.4615
+            }
+        },
+        "best_by_ranking_objective": {
+            "weights": {
+                "w_raw": 0.1,
+                "w_structured": 0.1,
+                "w_problem_proposal": 0.1,
+                "w_weighted_field": 0.2,
+                "w_cleaned": 0.05,
+                "w_hybrid": 0.45
+            },
+            "metrics": {
+                "precision_at_5": 0.3787,
+                "precision_at_10": 0.2496,
+                "ndcg_at_10": 0.8121,
+                "mrr": 0.6549,
+                "average_relevance": 1.4469,
+                "average_legal_meaning_score": 36.19,
+                "ranking_objective": 0.6704
+            }
+        },
+        "train_validation_result": {
+            "fold0_train_best_weights": {
+                "w_raw": 0.0,
+                "w_structured": 0.1,
+                "w_problem_proposal": 0.1,
+                "w_weighted_field": 0.2,
+                "w_cleaned": 0.15,
+                "w_hybrid": 0.45
+            },
+            "fold0_val_metrics": {
+                "precision_at_5": 0.36,
+                "precision_at_10": 0.2237,
+                "ndcg_at_10": 0.7726,
+                "mrr": 0.6467,
+                "average_relevance": 1.3851,
+                "average_legal_meaning_score": 34.07,
+                "num_evaluated_pairs": 148,
+                "num_unlabeled_pairs": 2,
+                "num_sources": 15,
+                "objective_score": 0.5411,
+                "candidate_recall_objective": 0.432,
+                "ranking_objective": 0.646
+            },
+            "cv_average_validation_objective_score": 0.5536
+        }
+    },
+    "normalization_applied": {
+        "weighted_field": true,
+        "final_ensemble": true,
+        "normalization_stats": {
+            "WF Title Law Name": {
+                "before_min": -0.07669524848461151,
+                "before_max": 1.0,
+                "before_mean": 0.22911587357521057,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.300152987241745
+            },
+            "WF Full Text": {
+                "before_min": -0.017774447798728943,
+                "before_max": 0.9983087182044983,
+                "before_mean": 0.6124855875968933,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.6408203840255737
+            },
+            "WF Current Law": {
+                "before_min": -0.005388413555920124,
+                "before_max": 0.9962913393974304,
+                "before_mean": 0.5114445090293884,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.49827319383621216
+            },
+            "WF Problem": {
+                "before_min": -0.01926172897219658,
+                "before_max": 1.0000001192092896,
+                "before_mean": 0.5292363166809082,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.5056012272834778
+            },
+            "WF Proposal": {
+                "before_min": -0.03186473995447159,
+                "before_max": 1.0,
+                "before_mean": 0.5205530524253845,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.5217823386192322
+            },
+            "WF Article Jaccard": {
+                "before_min": 0.0,
+                "before_max": 1.0,
+                "before_mean": 0.007510081510081509,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.010975117975117975
+            },
+            "FE Raw Score": {
+                "before_min": -0.036322567611932755,
+                "before_max": 0.9984797835350037,
+                "before_mean": 0.6023843288421631,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.6418951153755188
+            },
+            "FE Structured Score": {
+                "before_min": -0.08085456490516663,
+                "before_max": 0.997576117515564,
+                "before_mean": 0.5131940841674805,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.56771320104599
+            },
+            "FE Problem Proposal Score": {
+                "before_min": -0.03726101294159889,
+                "before_max": 1.0,
+                "before_mean": 0.6478267312049866,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.6610289216041565
+            },
+            "FE Weighted Field Best Score": {
+                "before_min": 0.09361468255519867,
+                "before_max": 0.9999999761581421,
+                "before_mean": 0.4445962356239417,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.42097724355689525
+            },
+            "FE Cleaned Problem Proposal Score": {
+                "before_min": 0.018370218575000763,
+                "before_max": 1.0,
+                "before_mean": 0.6951946020126343,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.6775824427604675
+            },
+            "FE Hybrid Cleaned Best Score": {
+                "before_min": 0.0371001201641743,
+                "before_max": 0.9999999761581421,
+                "before_mean": 0.641716495950032,
+                "after_min": 0.0,
+                "after_max": 1.0,
+                "after_mean": 0.6364039374681809
+            }
+        }
+    }
+}

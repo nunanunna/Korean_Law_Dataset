@@ -1,0 +1,10 @@
+v2 실험에서는 cleaned_problem_proposal, keyword_tfidf, hybrid_cleaned를 추가하였다.
+그 결과 hybrid_cleaned가 Precision@5와 Precision@10에서 가장 높은 성능을 보였다.
+이는 전처리된 의미 임베딩, 키워드 유사도, 조문 유사도의 결합이 상위 추천 후보의 관련성 향상에 기여했음을 보여준다.
+
+다만 nDCG@10과 MRR에서는 structured 방식이 가장 높았다.
+따라서 hybrid_cleaned는 관련 후보를 top-k 안에 포함시키는 능력이 강하고,
+structured는 관련 후보를 더 앞 순위에 배치하는 능력이 강한 것으로 해석된다.
+
+향후에는 hybrid_cleaned를 후보 생성 단계에 사용하고,
+structured 또는 legal frame 기반 점수를 재정렬 단계에 사용하는 2-stage 구조가 적합하다.
