@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+Sbert_output/title_heavy_grid_search_results.json
+Sbert_output/title_heavy_grid_search_results.csv
